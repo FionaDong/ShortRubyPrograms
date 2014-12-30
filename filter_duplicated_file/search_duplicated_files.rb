@@ -1,12 +1,9 @@
+require 'pry'
 require 'fileutils'
 
 Dir.chdir ARGV[0]
-
 #get all the files and directories under current folder.
 file_dir = Dir['**/*']
-
-binding.pry
-
 filenames = []
 files = []
 current_path = Dir.getwd + '/'
